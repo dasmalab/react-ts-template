@@ -7,8 +7,8 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && webpack --env MODE=prod --progress",
     "tauri": "tauri",
-    "dev": "npm run tauri dev",
-    "bundle": "tauri build",
+    "dev": "tauri dev",
+    "bundle": "npm run build && tauri build",
     "lint": "eslint src --ext .ts,.tsx --ignore-pattern *test.ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
