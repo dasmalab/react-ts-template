@@ -22,6 +22,7 @@
   "rules": {
     "prettier/prettier": "error",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "linebreak-style": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "react/jsx-one-expression-per-line": "off",
     "no-use-before-define": "off",
