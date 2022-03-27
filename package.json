@@ -6,6 +6,9 @@
     "start": "webpack-dev-server --env MODE=dev",
     "clean": "rm -rf dist",
     "build": "npm run clean && webpack --env MODE=prod --progress",
+    "tauri": "tauri",
+    "dev": "npm run tauri dev",
+    "bundle": "tauri build",
     "lint": "eslint src --ext .ts,.tsx --ignore-pattern *test.ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -63,6 +66,7 @@
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
-    "redux-saga": "^1.1.3"
+    "redux-saga": "^1.1.3",
+    "tauri": "^0.14.1"
   }
 }
